@@ -1,0 +1,190 @@
+body{
+    background-image: url("https://images2.alphacoders.com/130/1308898.jpg");
+    background-size: cover;
+}
+/* Navbar */
+.navbar {
+    background-color: #ddd12b;
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Container da Navbar */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Marca */
+.brand {
+    font-size: 1.5em;
+    color: #000; /* Alterado para preto */
+    text-decoration: none;
+}
+
+/* Menu da Navbar */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Itens do Menu */
+.navbar-menu li {
+    display: inline;
+}
+
+.logo{
+    width: 50px;
+}
+
+/* Links do Menu */
+.navbar-menu a {
+    color: #000; /* Alterado para preto */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.container {
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Para garantir que o vídeo não se estenda além da div */
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cobrir todo o espaço da div */
+    z-index: -1; /* Para colocar o vídeo atrás do conteúdo */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Para garantir que o conteúdo fique sobre o vídeo */
+    text-align: center; /* Alinha o conteúdo no centro */
+    color: white; /* Define a cor do texto */
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ddd12b;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding-left: 100px;
+    padding-right: 100px;
+    letter-spacing: 4px;
+}
+button:hover {
+    background-color: #8a831f;
+    color: rgb(39, 37, 37);
+}
+.img{
+    width: 500px;
+}
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f1c40f; /* Cor ao passar o mouse */
+}
+
+@media (max-width: 1200px) {
+    .brand {
+        font-size: 1.3em;
+    }
+
+    .navbar-menu {
+       gap: 0px;
+      
+    }
+
+    .navbar-menu a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand {
+        font-size: 1.2em;
+    }
+
+    .navbar-menu a {
+        font-size: 0.8em;
+        
+    }
+
+    button {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 14px;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .brand {
+        font-size: 1.1em;
+    }
+
+    .navbar-menu a {
+        font-size: 0.7em;
+    }
+
+    button {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
